@@ -31,3 +31,12 @@ function changeColor() {
       index=0;
   }
 }
+
+function toggleNavbar() {
+  const links = document.querySelector('.links');
+  links.classList.toggle('active');
+  const menu = document.querySelector('.mobile-navbar');
+  menu.classList.toggle('active');
+  const cross = document.querySelector('.cross');
+  cross.classList.toggle('active');
+}
