@@ -26,4 +26,8 @@ function changeColor() {
       changeColor();
     }, 500);
   }
+  else{
+      myArray=[];
+      index=0;
+  }
 }
