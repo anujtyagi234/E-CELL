@@ -33,15 +33,46 @@ body {
     justify-content: center;
 }
 
+#box1 {
+    background: linear-gradient(135deg,rgb(76 76 253),rgb(167, 9, 167));
+}
+
 .box {
+    border-radius: 25px;
     border: 2px solid black;
     margin: 20px;
-    width: 40vb;
+    width: 40vb; 
     height: 40vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 img {
-    width:40vb;
+    width: 90%;
 }
+
+#box3 {
+    flex-direction: row;
+    background-color:#d7d7d7;
+    order: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.square {
+    width: 25%; 
+    padding-top: 25%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: blue; /* Adjust the color as needed */
+    margin: 2%; /* Adjust the margin for spacing between squares */
+}
+
+
+
 @media (max-width: 935px) and (min-width: 480px) {
     .container {
         flex-direction: column;
@@ -64,3 +95,5 @@ img {
         order: 0;
     }
 }
+
+
