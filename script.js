@@ -4,11 +4,11 @@ let index = 0;
 
 squareElements.forEach((square) => {
   square.addEventListener('click', () => {
-    square.style.backgroundColor = 'red';
+    square.style.backgroundColor = '#7e0707';
     const squareId = square.id;
     myArray.push(squareId);
 
-    if (squareId == 9) {
+    if (squareId == 'box9') {
       setTimeout(() => {
         changeColor();
       }, 500);
@@ -17,7 +17,7 @@ squareElements.forEach((square) => {
 });
 
 function changeColor() {
-  if (index < myArray.length) {
+  if (index < myArray.length-1) {
     const elementId = document.getElementById(myArray[index]);
     elementId.style.backgroundColor = 'rgb(0, 0, 159)';
     index++;
