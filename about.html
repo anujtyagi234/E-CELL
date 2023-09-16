@@ -1,113 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anuj Tyagi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
 
+      #profile-container {
+        background-color: #fff;
+        max-width: 400px;
+        margin: 3% auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      #profile-picture {
+        max-width: 200px;
+        height: auto;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+      }
+
+      #name {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      #registration-number {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #888;
+      }
+
+      #instagram-button {
+        background-color: #ff5a5f;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      /* Enhance the button hover effect */
+      #instagram-button:hover {
+        background-color: #ad1013;
+        transform: scale(1.1);
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      @media (max-width: 768px) {
         #profile-container {
-            background-color: #fff;
-            max-width: 400px;
-            margin: 3% auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          margin-top: 3%;
+          max-width: 80%;
+          padding: 10px;
         }
 
         #profile-picture {
-            max-width: 200px;
-            height: auto;
-            border-radius: 50%;
-            margin: 0 auto 20px;
+          max-width: 150px;
         }
 
         #name {
-            font-size: 28px;
-            font-weight: bold;
-            margin: 10px 0;
+          font-size: 24px;
         }
 
         #registration-number {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #888;
+          font-size: 16px;
         }
 
         #instagram-button {
-            background-color: #ff5a5f;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: background-color 0.3s;
-            display: inline-block;
-            margin-top: 20px;
+          font-size: 16px;
+          padding: 10px 20px;
         }
-
-        #instagram-button:hover {
-            background-color: #d14649;
-        }
-
-        @media (max-width: 768px) {
-            #profile-container {
-                margin-top: 3%;
-                max-width: 80%;
-                padding: 10px;
-            }
-
-            #profile-picture {
-                max-width: 150px;
-            }
-
-            #name {
-                font-size: 24px;
-            }
-
-            #registration-number {
-                font-size: 16px;
-            }
-
-            #instagram-button {
-                font-size: 16px;
-                padding: 10px 20px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <ul class="links" type="none">
-            <li><a href="about.html">Home</a></li>
-            <li><a href="index.html">Grid</a></li>
-            <li><a href="https://www.linkedin.com/in/anuj-tyagi-a33265266" target="_blank">LinkedIn</a></li>
-        </ul>
-        <div class="mobile-navbar" onclick="toggleNavbar()">
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
-        </div>
-        <div class="cross" onclick="toggleNavbar()">
-            <img src="image/cross.png" alt="cross">
-        </div>
+      <ul class="links" type="none">
+        <li><a href="about.html">Home</a></li>
+        <li><a href="index.html">Grid</a></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/anuj-tyagi-a33265266"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+      <div class="mobile-navbar" onclick="toggleNavbar()">
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+      </div>
+      <div class="cross" onclick="toggleNavbar()">
+        <img src="image/cross.png" alt="cross" />
+      </div>
     </nav>
     <div id="profile-container">
-        <img id="profile-picture" src="image/profile.jpg" alt="Your Name">
-        <div id="name">ANUJ TYAGI</div>
-        <div id="registration-number">Registration Number: 20224027</div>
-        <a id="instagram-button" href="https://www.instagram.com/anujtyagi234/" target="_blank">Follow on Instagram</a>
+      <img id="profile-picture" src="image/profile.jpg" alt="Your Name" />
+      <div id="name">ANUJ TYAGI</div>
+      <div id="registration-number">Registration Number: 20224027</div>
+      <a
+        id="instagram-button"
+        href="https://www.instagram.com/anujtyagi234/"
+        target="_blank"
+        >Follow on Instagram</a
+      >
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
