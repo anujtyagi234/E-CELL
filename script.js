@@ -1,3 +1,4 @@
+// for box-3 to convert the color on click
 const squareElements = document.querySelectorAll('.square');
 let myArray = [];
 let index = 0;
@@ -32,6 +33,7 @@ function changeColor() {
   }
 }
 
+// for making the navigation bar responsive for mobile
 function toggleNavbar() {
   const links = document.querySelector('.links');
   links.classList.toggle('active');

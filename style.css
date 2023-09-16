@@ -1,8 +1,10 @@
+/* Reset default margin and padding for the entire page */
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Style for the navigation bar */
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -11,6 +13,7 @@ body {
     box-shadow: 0px 2px 4px rgb(157, 157, 157);
 }
 
+/* Style for the navigation links */
 .links {
     display: flex;
     margin: 0;
@@ -27,16 +30,19 @@ body {
     color: black;
 }
 
+/* Container for the content boxes */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+
 #box1 {
     background: linear-gradient(135deg, rgb(76 76 253), rgb(167, 9, 167));
 }
 
+/* Common style for all three boxes */
 .box {
     display: flex;
     border-radius: 25px;
@@ -48,9 +54,11 @@ body {
     align-items: center;
 }
 
+
 img {
     width: 90%;
 }
+
 
 #box3 {
     background-color: #d7d7d7;
@@ -60,6 +68,7 @@ img {
     align-content: center;
 }
 
+/* Style for the square elements inside Box 3 */
 .square {
     width: 25%;
     padding-top: 25%;
@@ -69,17 +78,20 @@ img {
     margin: 2%;
 }
 
+/* Hide the cross icon by default */
 .cross {
-    display: none; /* Hide the cross icon by default */
+    display: none;
 }
 
+/* Style for Box 9 */
 #box9 {
     background-color: #7e0707;
 }
 
+/* Media query for tablet mode*/
 @media (max-width: 1215px) and (min-width: 475px) {
     #box1 {
-        width: 100%;
+        width: 100%; /* Make Box 1 take full width */
     }
     #box2,
     #box3 {
@@ -88,7 +100,9 @@ img {
     }
 }
 
+/* Media query for smartphone */
 @media (max-width: 475px) {
+    /* Adjust layout for smaller screens */
     .container {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -105,9 +119,11 @@ img {
         align-items: center;
     }
 
+    /* Hide the navigation links on smaller screens */
     .links {
         display: none;
     }
+    /* Adjust the layout of the navbar for smaller screens */
     .navbar {
         display: flex;
         flex-direction: column-reverse;
@@ -115,6 +131,7 @@ img {
         align-content: center;
     }
 
+    /* Style for the mobile menu icon */
     .mobile-navbar {
         width: 25px;
         height: 25px;
@@ -124,6 +141,7 @@ img {
         cursor: pointer;
     }
 
+    /* Style for the lines in the mobile menu icon */
     .icon {
         width: 19px;
         height: 4px;
@@ -132,6 +150,7 @@ img {
         margin: 3px;
     }
 
+    /* Style for the active links on smaller screens */
     .links.active {
         display: flex;
         flex-direction: column;
@@ -140,13 +159,15 @@ img {
         text-align: center;
     }
 
+     /* hide the mobile menu icon when links are active */
+     .mobile-navbar.active {
+        display:none;   
+       }
+
     /* Show the cross icon when links are active */
-    .mobile-navbar.active {
-     display:none;   
-    }
     .cross.active {
         width: 25px;
-        display:block; 
-        align-self: end; 
-       }
+        display: block;
+        align-self: end;
+    }
 }
